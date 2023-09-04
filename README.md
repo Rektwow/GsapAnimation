@@ -1,10 +1,10 @@
-###IMPORTANT
+### IMPORTANT
 
 Please open the program with a Live Server
 
 
 
-###AUTOPLAY
+### AUTOPLAY
 
 Please make sure that you have the audio enabled/disabled (depending on your browser)
 
@@ -23,7 +23,7 @@ Go to the right of Auto-Play, and click the pop-up menu to choose: Allow All Aut
 
 
 
-###FONTS
+### FONTS
 
 When using the Inspector in https://www.audible.de/ you can see that the used font is called "Audible Sans"
 (font-family: "Audible Sans", Arial, sans-serif)
