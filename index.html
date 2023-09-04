@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Audible Audiobooks free trial">
+   <title>Audible Banner</title>
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.js"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Flip.min.js"></script>
+   <script defer src="js/code.js"></script>
+</head>
+<body>
+
+<!-- 1. Banner Container -->
+
+<div class="container">
+
+   <!-- 2. Audible logo assemble -->
+
+   <div class="logoBox">
+
+      <img class="logoIcon" id="lo1" src="images/logo1.png" alt="first and lower part of the audible logo">
+      <img class="logoIcon" id="lo2" src="images/logo2.png" alt="second part of the audible logo">
+      <img class="logoIcon" id="lo3" src="images/logo3.png" alt="thirst part of the audible logo">
+      <img class="logoIcon" id="lo4" src="images/logo4.png" alt="last and upper part of the audible logo">  
+ 
+   </div>
+
+   <!-- 3. Text Effect -->
+
+   <p class="texts"></p>
+
+   <!-- 4. Audible text logo -->
+
+   <img class="audible" src="images/audible.png" alt="audible text logo" > 
+
+
+
+   <!-- 5. Flip Icons and Text   -->
+
+   <div class="icons">
+
+      <div class="icon">
+         <div class="flip_1 flipText">
+            <h1>Offline Hören</h1>
+            <p>Erlebe Audible auf dem Smartphone, Tablet, am Computer oder deinem Amazon Echo. Auch offline.</p>
+         </div>
+         <div class="flip_1">
+            <img src="images/Offline.png" alt="arrow down icon symbolizing offline listening">
+         </div>
+      </div>
+
+      <div class="icon">
+         <div class="flip_2 flipText">
+            <h1>Die Größten Hörerlebnisse</h1>
+            <p>Entdecke genau das, was du hören willst: Wähle aus 200.000 Titeln und inspirierenden Audible Original Podcasts.</p>
+         </div>
+         <div class="flip_2 side">
+            <img src="images/Library.png" alt="book like icon symbolizing a wast selection of audiobooks">
+         </div>
+      </div>
+
+      <div class="icon">
+         <div class="flip_3 flipText">
+            <h1>Natürlich Werbefrei</h1>    
+            <p>Genieße dein Hörerlebnis ohne Unterbrechung.</p> 
+         </div>
+         <div class="flip_3">
+            <img src="images/Free.png" alt="thumbs up icon symbolizing that audible is add free">
+         </div>
+      </div>
+
+      <div class="icon">
+         <div class="flip_4 flipText">
+            <h1>Einfach Ausprobieren</h1> 
+            <p>Teste Audible 30 Tage kostenlos. Du kannst jederzeit kündigen.</p>
+         </div>
+         <div class="flip_4 side">
+            <img src="images/Listen.png" alt="headphone icon symbolizing a free 30 days trial">
+         </div>
+      </div>
+
+   </div>
+
+   <!-- 6. Swiper/Slider gallery -->
+
+   <div class="swiper-container">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><img class="cov" src="images/cover-1.jpg" alt="Web development for beginners"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-2.jpg" alt="Arthas: rise of the lich king"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-3.jpg" alt="Marvel's venom"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-4.jpg" alt="The witcher"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-5.jpg" alt="The tiger and the wolf"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-6.jpg" alt="World of warcraft: illidan"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-7.jpg" alt="Survival quest"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-8.jpg" alt="The programmers code"></div>
+      <div class="swiper-slide"><img class="cov" src="images/cover-9.jpg" alt="AI hacker 2"></div>
+   
+      </div>
+
+   </div>
+   
+   <!-- 7. Call to action button -->
+
+   <div class="cta">
+      <a href="https://www.audible.de/" target="_blank" rel="noopener">30 Tage Kostenlos Testen</a>
+   </div>
+
+
+</div>
+
+</body>
+</html>

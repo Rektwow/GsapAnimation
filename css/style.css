@@ -1,0 +1,269 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #243139;
+  color: #2d2d2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Audible Sans", Arial, sans-serif;
+  font-weight: 600;
+}
+
+/* 1. Banner Container */
+
+.container {
+  overflow: hidden;
+  width: 900px;
+  height: 450px;
+  background: #fcf3ee;
+  position: absolute;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  margin-bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 200px;
+  background: #f8991c;
+  z-index: -3;
+  -webkit-animation: animate 16s linear infinite;
+  animation: animate 16s linear infinite;
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  background: #fcf3ee;
+  border-radius: 10px;
+  z-index: -3;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* 2. Audible logo assemble */
+
+.logoBox {
+  width: 100%;
+  height: 100%;
+}
+
+.logoIcon {
+  position: absolute;
+  width: 300px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/* 3. Text Effect */
+
+.texts {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  line-height: 1.2;
+  width: 60%;
+  font-size: 32px;
+  font-size: 32px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* 4. Audible text logo */
+
+.audible {
+  position: absolute;
+  width: 200px;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/*  5. Flip Icons and Text */
+.icons {
+  position: absolute;
+  width: 95%;
+  top: 150%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.icons img {
+  width: 100px;
+  cursor: pointer;
+  -webkit-transform: translateX(30%);
+  transform: translateX(30%);
+}
+.icons img:hover {
+  box-shadow: inset 0 0 15px #f8991c;
+  border-radius: 50%;
+}
+
+.icon {
+  visibility: hidden;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-transform: translateX(-90%);
+  transform: translateX(-90%);
+}
+.side {
+  -webkit-transform: translateX(130%);
+  transform: translateX(130%);
+}
+.icon h1 {
+  font-size: 20px;
+  color: #fcf3ee;
+  text-shadow: 1px 1px 1px #2d2d2d;
+}
+
+.flipText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  background: #f8991c;
+  color: #2d2d2d;
+  text-shadow: 0 0 1px #fcf3ee;
+  cursor: pointer;
+  font-size: 12px;
+  width: 270px;
+  height: 90%;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  -webkit-transform: translateX(70%);
+  transform: translateX(70%);
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0),
+    15px 15px 15px rgba(0, 0, 0, 0), inset 4px 4px 5px rgba(255, 255, 255, 0.5),
+    inset -4px -4px 5px rgba(0, 0, 0, 0.2), 0 50px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* 6. Swiper/Slider gallery */
+
+.swiper-container {
+  width: 450px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+  top: 15%;
+  left: 47%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.cov {
+  width: 150px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0005);
+}
+
+/* 7. Call to action button */
+
+.cta {
+  background: #f8991c;
+  color: #2d2d2d;
+  width: 320px;
+  height: 40px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 8%;
+  left: 54%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+}
+.cta:hover {
+  background: #ffc849;
+}
+a {
+  text-decoration: none;
+  color: #2d2d2d;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
