@@ -1,7 +1,27 @@
-### IMPORTANT
+# Banner Animation Project with GSAP
 
-Please open the program with a Live Server
+## Overview
 
+This repository contains a banner animation project created using the GreenSock Animation Platform (GSAP). 
+GSAP is a powerful JavaScript animation library that allows for smooth and highly customizable animations on the web. 
+In this project, I leveraged GSAP to create an eye-catching banner animation that can be used on websites or web applications to capture user attention and convey important information.
+
+## Link 
+https://rektwow.github.io/GsapAnimation/
+
+## Features
+
+- **Smooth Animations**: GSAP provides precise control over animations, ensuring that transitions are smooth and visually appealing.
+
+- **Customizable**: The animations in this project are highly customizable, allowing you to adapt them to suit your specific design and branding needs.
+
+- **Responsive Design**: The banner animation is designed to work seamlessly on various screen sizes and devices, ensuring a consistent user experience.
+
+## Dependencies
+
+This project relies on the following dependencies:
+
+The GreenSock Animation Platform is used for creating and managing animations.
 
 
 ### AUTOPLAY
